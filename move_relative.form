@@ -1,0 +1,68 @@
+#
+# Example form file -- goes with axlform.il
+#
+FILE_TYPE=FORM_DEFN VERSION=2
+FORM AUTOGREYTEXT 
+FIXED
+PORT 44 14
+HEADER "Form Field Type Demo"
+
+TILE
+
+TEXT "step length :"
+FLOC 20 6
+ENDTEXT
+
+FIELD textStep
+FLOC 28 6
+REALFILLIN 8 4
+DECIMAL 3
+ENDFIELD
+
+FIELD buttonMoveUp
+FLOC 25 10
+MENUBUTTON "Up" 4 3
+ENDFIELD
+
+FIELD buttonMoveDown
+FLOC 25 16
+MENUBUTTON "Down" 4 3
+ENDFIELD
+
+FIELD buttonMoveLeft
+FLOC 20 13
+MENUBUTTON "Left" 4 3
+ENDFIELD
+
+FIELD buttonMoveRight
+FLOC 30 13
+MENUBUTTON "Right" 4 3
+ENDFIELD
+
+FIELD buttonDone
+FLOC 2 29
+MENUBUTTON "Ok" 10 3
+ENDFIELD
+
+FLEXMODE edgegravity
+FLEX tab 0 0 1 1
+FLEX listfield 0 0 1 1
+FLEX tree 0 0 1 1
+FLEX progress 0 0 1 0
+FLEX enum 0 0 1 0
+FLEX string 0 0 1 0
+FLEX strwenum 0 0 1 0
+FLEX float 0 0 1 0
+FLEX int 0 0 1 0
+FLEX t1 0 0 0 0
+FLEX g2 0 1 0 0
+FLEX bmpcheck 1 0 0 0
+FLEX bmp1 0 0 1 1
+FLEX stc 0.5 0 0 0
+FLEX color 0.0 0 0.5 0
+FLEX icolor 0.5 0 0.5 0
+FLEX slidebar 0 0 1 0
+
+ENDTILE
+
+ENDFORM
